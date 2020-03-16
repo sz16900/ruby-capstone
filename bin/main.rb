@@ -1,10 +1,11 @@
 require_relative '../lib/linting'
+require_relative '../lib/output'
 
-files = Dir.glob(File.join('**', '*.json')).reject { |f| f['spec/'] }
+files = Dir.glob(File.join('**', '*.css')).reject { |f| f['spec/'] }
 
-f_line = 1
 data = ''
 lint = Linter.new
+output = Output.new
 
 files.each do |file|
   f = File.open(file, 'r')
@@ -13,4 +14,9 @@ files.each do |file|
   end
 end
 
-p lint.linter_pairs?(data)
+brackets = lint.linter_pairs?(data)
+if brackets == false && lint.close_error == true
+  puts output.closed_pair(lint.line)
+elsif brackets ==  false
+  puts output.open_errors(lint.my_stack)
+end
