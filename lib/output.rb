@@ -8,20 +8,22 @@ class Output
   end
 
   def closed_pair(line)
-    str = "\nTrailing closed bracket in line: #{line}.\nI cannot continue with the linting.\n\n"
+    str = "\n     I cannot continue with the linting."
+    str += "\n     Trailing closed bracket in line:" +  @color.red(" #{line}\n")
     str
   end
 
   def all_good
-    str = "\nAll good.\nThere seems to be no errors with your brackets.\n\n"
+    str = "\n     All good.\n"
+    str += "     There seems to be no errors with your brackets.\n\n"
     str
   end
 
   def open_errors(arr)
-    str = "\nThere is/are open bracket(s) that need to be checked.\n\nLines:\n"
+    str = "\n     There is/are open bracket(s) that need to be checked.\n     Line(s):\n"
     arr.each do |x|
-        str += "         #{x[0]}\n"
+      str += @color.red("               #{x[0]}\n")
     end
-    @color.magenta(str)
+    str
   end
 end

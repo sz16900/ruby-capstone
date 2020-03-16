@@ -1,6 +1,6 @@
 require_relative '../lib/output'
 
-class Linter
+class Bracket
   attr_reader :my_stack, :line, :close_error
   def initialize
     @my_stack = []
