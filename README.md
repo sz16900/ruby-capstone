@@ -1,6 +1,6 @@
 # CSS Linter
 
-Second Capstone Project for Ruby as part of the Microverse Full Stack Web Development course. 
+A beginner's CSS linter that checks for basic css rules: brackets, colon and semi colon inner structure. This is in part of the second Capstone project for the Microverse Full Stack Web Development curriculum. 
 ---
 
 ## Built With
