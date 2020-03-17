@@ -30,7 +30,9 @@ class Color
   def yellow(str)
     "\e[33m#{str}\e[0m"
   end
+end
 
+class Highights < Color
   def bold(str)
     "\e[1m#{str}\e[22m"
   end
