@@ -19,7 +19,7 @@ Second Capstone Project for Ruby as part of the Microverse Full Stack Web Develo
 ---
 
 
-## Installing Linte
+## Installing Linter
 
 When you have installed Ruby on your computer, clone the project. You can do this by first opening the terminal.
 
