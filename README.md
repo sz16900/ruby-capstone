@@ -128,7 +128,7 @@ As far as this version release of my linter, this program will check the followi
     
     • checks code inside brackets follows colon and semi-colon rules
       
-    • will throw an error if code does not follow basic linting rules: i.e keep code with now weird extra empty spaces
+    • will throw an error if code does not follow basic linting rules: i.e do not start new lines with empty speces
     
 
 ---
