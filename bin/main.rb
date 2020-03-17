@@ -1,4 +1,4 @@
-# see if you can read 2+ files and log their errors as a challange
+#!/usr/bin/env ruby
 
 require_relative '../lib/bracket'
 require_relative '../lib/output'
