@@ -13,7 +13,7 @@ a {
 /* CONTAINER */
 
 .container {
-    width: 100%;
+    width 100%;
     margin: 0 auto;
 }
 
@@ -95,7 +95,7 @@ input[type="text"] {
 header {
     clear: both;
     width: 980px;
-height: 335px;
+    height: 335px;
     margin: 100px auto;
 }
 
