@@ -36,6 +36,7 @@ When you have installed Ruby on your computer, clone the project. You can do thi
 * Clone the project to your computer. You can do this by typing: <b>git clone https://github.com/sz16900/ruby-capstone.git</b>
 * Go to main folder: cd ruby-capstone
 * Run linter by typing: bin/main.rb
+* PRO TIP: make sure you have a .css file in the root directory (+2 files feauture scan coming soon!)
 * Enjoy!
 
 ---
