@@ -42,4 +42,12 @@ class Output
     end
     str
   end
+
+  def warning_space(arr)
+    str = "   Warning:\n\n"
+    arr.each do |x|
+      str += "        - Line #{x[0]} -> #{x[2]} white space\n"
+    end
+    str
+  end
 end

@@ -1,3 +1,5 @@
+# see if you can read 2+ files and log their errors as a challange
+
 require_relative '../lib/bracket'
 require_relative '../lib/output'
 require_relative '../lib/color'
@@ -36,6 +38,7 @@ class Linter
 
     puts @color.green(@output.all_good_inner) if inner.log.empty?
     puts @color.green(@output.missing_colon(inner.log)) if inner.log.empty? == false
+    puts @color.yellow(@output.warning_space(inner.warning_space)) if inner.warning_space.empty? == false
   end
 
   def read_file

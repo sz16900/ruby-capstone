@@ -1,8 +1,121 @@
+/* RESET */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* CONTAINER */
+
 .container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr; 
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: 1em;
-    justify-items: stretch;
-    align-items: stretch;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* BANNER */
+
+.hero {
+    width: 100%;
+    height: 538px;
+    background: url(../images/your_verse_hero.jpg) no-repeat center bottom;
+    background-size: cover;
+}
+
+.navigator {
+    width: 980px;
+    height: 36px;
+    margin: 0 auto;
+    position: relative;
+    top: 80px;
+    list-style: none;
+    display: flex;
+    border-radius: 10px;
+}
+
+.item {
+    background: linear-gradient(#707070 50%, #868686 50%);
+    height: 36px;
+    width: 102.633px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    border-right: 1px #868686 solid;
+}
+
+.item:hover {
+    background: linear-gradient(#3a3a3a 50%, #4c4c4c 50%);
+    cursor: pointer;
+}
+
+.apple-logo {
+    position: relative;
+    width: 17px;
+    height: 20px;
+}
+
+/* targetting individual items for styling purposes */
+.apple-logo-item {
+    border-radius: 5px 0 0 5px;
+}
+
+.looking {
+    position: relative;
+    top: 1px;
+    left: -116px;
+    height: 16px;
+    filter: invert(100%);
+}
+
+.glass {
+    border-radius: 0 5px 5px 0;
+    flex-grow: 2;
+}
+
+input[type="text"] {
+    background: transparent;
+    border: none;
+    box-shadow: 1px 1px 4px 1px #555 inset;
+    border-radius: 10px 10px 10px 10px;
+    width: 121px;
+    left: 6px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* HEADER */
+
+header {
+    clear: both;
+    width: 980px;
+height: 335px;
+    margin: 100px auto;
+}
+
+.title {
+    overflow: hidden;
+    height: 99px;
+}
+
+.video {
+    margin: 29px auto;
+    overflow: hidden;
+    height: 31px;
+}
+
+/* PROMOTIONAL ITEMS */
+
+.promo {
+    list-style: none;
+    display: flex;
+    height: 200px;
+    margin-top: 2px;
+    width: 100%;
 }
