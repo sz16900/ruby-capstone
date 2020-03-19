@@ -64,7 +64,7 @@ When you have installed Ruby on your computer, clone the project. You can do thi
     }
     ```
 
-    * ## Space Wargning
+    * ## Space Warning
 
     - Bad Code
     ```css
