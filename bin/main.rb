@@ -13,6 +13,19 @@ class Linter
     @color = Color.new
   end
 
+  def read_file
+    @files.each do |file|
+      f = File.open(file, 'r')
+      f.each_line do |line|
+        @data += line
+      end
+    end
+    # Start of the linting: set the important methods to private for security reasons
+    inner_method if brackets_method
+  end
+
+  private
+
   def brackets_method
     lint = Bracket.new
 
@@ -40,17 +53,7 @@ class Linter
     puts @color.green(@output.missing_colon(inner.log)) if inner.log.empty? == false
     puts @color.yellow(@output.warning_space(inner.warning_space)) if inner.warning_space.empty? == false
   end
-
-  def read_file
-    @files.each do |file|
-      f = File.open(file, 'r')
-      f.each_line do |line|
-        @data += line
-      end
-    end
-  end
 end
 
 starts = Linter.new
 starts.read_file
-starts.inner_method if starts.brackets_method
