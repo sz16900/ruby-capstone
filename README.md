@@ -14,10 +14,10 @@ A beginner's CSS linter that checks for basic css rules: brackets, colon and sem
 
 ## Screenshots
 
-  ### Faulty CSS missing colon
+  ### Faulty CSS missing colon:
 ![Faulty CSS missing colon](https://github.com/sz16900/ruby-capstone/blob/readme/screenshots/bcss.png?raw=true)
 
-  ### Faulty CSS missing colon warning in the console
+  ### Faulty CSS missing colon warning in the console:
 ![Warning](https://github.com/sz16900/ruby-capstone/blob/readme/screenshots/brackets.png?raw=true)
 
 ## Pre-requisites
