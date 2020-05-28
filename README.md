@@ -41,6 +41,12 @@ When you have installed Ruby on your computer, clone the project. You can do thi
 
 ---
 
+## Testing
+
+`rspec`
+
+---
+
 ## Error List And Example:
 
 * ## Unclosed Bracket
@@ -148,7 +154,8 @@ As far as this version release of my linter, this program will check the followi
 
 - Github: [@sz16900](https://github.com/sz16900)
 - Twitter: [@_sethzea_](https://twitter.com/_sethzea_)
-- Linkedin: [Linkedin](https://www.linkedin.com/in/seth-zea/)
+- Linkedin: [linkedin](https://www.linkedin.com/in/seth-zea-9481a8148/)
+- Email: zea.seth@gmail.com
 
 ---
 
